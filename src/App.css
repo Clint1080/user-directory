@@ -75,13 +75,26 @@ h2 span {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   align-items: center;
 }
 button {
   color: #fff;
+  border-style: none;
+  font-weight: bold;
 }
-button:nth-child(1),
-button:nth-child(5) {
+div.buttons > button {
   background-color: transparent;
+}
+.inner_buttons button {
+  background-color: #34a5da;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.inner_buttons button:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.favorites ol {
+  margin-left: 2.5rem;
 }

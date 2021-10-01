@@ -50,11 +50,13 @@ function App() {
       )}
       {/* <Card count={count} data={usersData} /> */}
       <div className="buttons">
-        <Button onClick={handlePrev} className="prev" text="<prev" />
-        <Button className="edit" text="Edit" />
-        <Button className="delete" text="Delete" />
-        <Button className="new" text="New" />
-        <Button onClick={handleNext} className="next" text="next>" />
+        <Button onClick={handlePrev} className="prev" text="< Previous" />
+        <div className="inner_buttons">
+          <Button className="edit" text="Edit" />
+          <Button className="delete" text="Delete" />
+          <Button className="new" text="New" />
+        </div>
+        <Button onClick={handleNext} className="next" text="Next >" />
       </div>
     </div>
   );
