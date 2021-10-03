@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Card from "./components/Card";
 import Button from "./components/Button";
 import Form from "./components/Form";
-import usersData from "./data/data";
+// import usersData from "./data/data";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ function App() {
       try {
         const { data } = await api.get("/persons");
         setPersons(data);
-        console.log(data);
+        // console.log(data);
       } catch (e) {
         if (e.response) {
           console.log(e.response.data);
@@ -28,7 +28,7 @@ function App() {
       }
     };
     getData();
-  }, []);
+  }, [count]);
 
   const handlePrev = () => {
     if (count > 0) {
@@ -36,8 +36,23 @@ function App() {
     }
   };
   const handleNext = () => {
-    if (count <= usersData.length - 2) {
+    if (count <= persons.length - 2) {
       setCount(() => count + 1);
+    }
+  };
+
+  const newPerson = async (person) => {
+    // console.log(person);
+    try {
+      await api.post("/persons", person);
+    } catch (e) {
+      if (e.response) {
+        console.log(e.response.data);
+        console.log(e.response.status);
+        console.log(e.response.headers);
+      } else {
+        console.log(e.message);
+      }
     }
   };
 
@@ -51,7 +66,7 @@ function App() {
       const { data } = await api.delete(`/persons/${id}`);
       const personsList = persons.filter((person) => person.id !== id);
       setPersons(personsList);
-      console.log(data);
+      // console.log(data);
     } catch (e) {
       if (e.response) {
         console.log(e.response.data);
@@ -67,7 +82,7 @@ function App() {
     <div className="App">
       <Header />
       {persons.length > 1 ? (
-        <Card data={persons} count={count} />
+        <Card data={persons} count={count} persons={persons} />
       ) : (
         <div>Loading</div>
       )}
@@ -85,7 +100,7 @@ function App() {
         </div>
         <Button onClick={handleNext} className="next" text="Next >" />
       </div>
-      <Form />
+      <Form addNewPerson={newPerson} />
     </div>
   );
 }

@@ -1,8 +1,10 @@
-const Card = ({ data, count }) => {
+const Card = ({ data, count, persons }) => {
   return (
     <div className="container">
       <div className="card">
-        <h2 className="count">{count + 1}/25</h2>
+        <h2 className="count">
+          {count + 1}/{persons.length}
+        </h2>
         <h1 className="name">
           {data[count].name.first}
           {data[count].name.last}

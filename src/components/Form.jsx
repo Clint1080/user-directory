@@ -1,9 +1,9 @@
 import { useState } from "react";
 // import api from "../api/persons";
 
-const Form = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+const Form = ({ addNewPerson }) => {
+  const [first, setFirst] = useState("");
+  const [last, setLast] = useState("");
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
   const [title, setTitle] = useState("");
@@ -12,15 +12,42 @@ const Form = () => {
   const [movie2, setMovie2] = useState("");
   const [movie3, setMovie3] = useState("");
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (!first) {
+      alert("Please add first name");
+      return;
+    }
+
+    addNewPerson({
+      name: { first, last },
+      city,
+      country,
+      title,
+      employer,
+      favoriteMovies: [movie1, movie2, movie3],
+    });
+
+    setFirst("");
+    setLast("");
+    setCity("");
+    setCountry("");
+    setTitle("");
+    setEmployer("");
+    setMovie1("");
+    setMovie2("");
+    setMovie3("");
+  };
+
   return (
     <div className="container">
-      <form action="" className="newPerson">
+      <form action="" className="newPerson" onSubmit={onSubmit}>
         <div className="form-control">
           <div>
             <label htmlFor="firstName">First Name</label>
             <input
-              onChange={(e) => setFirstName(e.target.value)}
-              value={firstName}
+              onChange={(e) => setFirst(e.target.value)}
+              value={first}
               type="text"
               id="firstName"
             />
@@ -28,8 +55,8 @@ const Form = () => {
           <div>
             <label htmlFor="lastName">Last Name</label>
             <input
-              onChange={(e) => setLastName(e.target.value)}
-              value={lastName}
+              onChange={(e) => setLast(e.target.value)}
+              value={last}
               type="text"
               id="lastName"
             />
