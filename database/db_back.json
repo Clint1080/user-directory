@@ -15,10 +15,7 @@
     },
     {
       "id": 2,
-      "name": {
-        "first": "Hastie",
-        "last": "Beardsdale"
-      },
+      "name": { "first": "Hastie", "last": "Beardsdale" },
       "city": "Dzvinogrud",
       "country": "Ukraine",
       "employer": "Vinte",
@@ -31,10 +28,7 @@
     },
     {
       "id": 3,
-      "name": {
-        "first": "Hyacinth",
-        "last": "Spiller"
-      },
+      "name": { "first": "Hyacinth", "last": "Spiller" },
       "city": "Gaxung",
       "country": "China",
       "employer": "Kanoodle",
@@ -47,10 +41,7 @@
     },
     {
       "id": 4,
-      "name": {
-        "first": "Drusi",
-        "last": "Gainsborough"
-      },
+      "name": { "first": "Drusi", "last": "Gainsborough" },
       "city": "Chupa",
       "country": "Russia",
       "employer": "Skivee",
@@ -63,10 +54,7 @@
     },
     {
       "id": 5,
-      "name": {
-        "first": "Hirsch",
-        "last": "Pywell"
-      },
+      "name": { "first": "Hirsch", "last": "Pywell" },
       "city": "Anopog",
       "country": "Philippines",
       "employer": "Topiczoom",
@@ -79,10 +67,7 @@
     },
     {
       "id": 6,
-      "name": {
-        "first": "Worthington",
-        "last": "Langfat"
-      },
+      "name": { "first": "Worthington", "last": "Langfat" },
       "city": "Utena",
       "country": "Lithuania",
       "employer": "Npath",
@@ -95,10 +80,7 @@
     },
     {
       "id": 7,
-      "name": {
-        "first": "Field",
-        "last": "Frawley"
-      },
+      "name": { "first": "Field", "last": "Frawley" },
       "city": "Soio",
       "country": "Angola",
       "employer": "Voonyx",
@@ -107,10 +89,7 @@
     },
     {
       "id": 8,
-      "name": {
-        "first": "Jolyn",
-        "last": "Ubank"
-      },
+      "name": { "first": "Jolyn", "last": "Ubank" },
       "city": "Aviá Terai",
       "country": "Argentina",
       "employer": "Eabox",
@@ -123,10 +102,7 @@
     },
     {
       "id": 9,
-      "name": {
-        "first": "Marion",
-        "last": "Santori"
-      },
+      "name": { "first": "Marion", "last": "Santori" },
       "city": "Liverpool",
       "country": "United Kingdom",
       "employer": "Skinix",
@@ -135,10 +111,7 @@
     },
     {
       "id": 10,
-      "name": {
-        "first": "Perri",
-        "last": "Koopman"
-      },
+      "name": { "first": "Perri", "last": "Koopman" },
       "city": "Isoka",
       "country": "Zambia",
       "employer": "Jayo",
@@ -151,10 +124,7 @@
     },
     {
       "id": 11,
-      "name": {
-        "first": "Danit",
-        "last": "Berg"
-      },
+      "name": { "first": "Danit", "last": "Berg" },
       "city": "New York City",
       "country": "United States",
       "employer": "Gabcube",
@@ -163,10 +133,7 @@
     },
     {
       "id": 12,
-      "name": {
-        "first": "Hadlee",
-        "last": "Piolli"
-      },
+      "name": { "first": "Hadlee", "last": "Piolli" },
       "city": "Nkurenkuru",
       "country": "Namibia",
       "employer": "Rhybox",
@@ -175,10 +142,7 @@
     },
     {
       "id": 13,
-      "name": {
-        "first": "Trev",
-        "last": "Upwood"
-      },
+      "name": { "first": "Trev", "last": "Upwood" },
       "city": "Santa Elena",
       "country": "Mexico",
       "employer": "Devpoint",
@@ -187,10 +151,7 @@
     },
     {
       "id": 14,
-      "name": {
-        "first": "Dex",
-        "last": "Mirando"
-      },
+      "name": { "first": "Dex", "last": "Mirando" },
       "city": "Issia",
       "country": "Ivory Coast",
       "employer": "Quinu",
@@ -203,10 +164,7 @@
     },
     {
       "id": 15,
-      "name": {
-        "first": "Say",
-        "last": "Gooderick"
-      },
+      "name": { "first": "Say", "last": "Gooderick" },
       "city": "Lousado",
       "country": "Portugal",
       "employer": null,
@@ -219,10 +177,7 @@
     },
     {
       "id": 16,
-      "name": {
-        "first": "Shirlee",
-        "last": "Senyard"
-      },
+      "name": { "first": "Shirlee", "last": "Senyard" },
       "city": "Makrochóri",
       "country": "Greece",
       "employer": "Zoomlounge",
@@ -231,10 +186,7 @@
     },
     {
       "id": 17,
-      "name": {
-        "first": "Brenna",
-        "last": "Wardell"
-      },
+      "name": { "first": "Brenna", "last": "Wardell" },
       "city": "Slavyansk-na-Kubani",
       "country": "Russia",
       "employer": "Meedoo",
@@ -247,10 +199,7 @@
     },
     {
       "id": 18,
-      "name": {
-        "first": "Moshe",
-        "last": "Fatkin"
-      },
+      "name": { "first": "Moshe", "last": "Fatkin" },
       "city": "Pojan",
       "country": "Albania",
       "employer": "Babbleopia",
@@ -259,10 +208,7 @@
     },
     {
       "id": 19,
-      "name": {
-        "first": "Dari",
-        "last": "Lomasny"
-      },
+      "name": { "first": "Dari", "last": "Lomasny" },
       "city": "Aghavnadzor",
       "country": "Armenia",
       "employer": "Lazzy",
@@ -275,10 +221,7 @@
     },
     {
       "id": 20,
-      "name": {
-        "first": "Adena",
-        "last": "Colbrun"
-      },
+      "name": { "first": "Adena", "last": "Colbrun" },
       "city": "Seres",
       "country": "Philippines",
       "employer": "Jabbercube",
@@ -287,10 +230,7 @@
     },
     {
       "id": 21,
-      "name": {
-        "first": "Orelie",
-        "last": "Reside"
-      },
+      "name": { "first": "Orelie", "last": "Reside" },
       "city": "Sukpak",
       "country": "Russia",
       "employer": "Oyoloo",
@@ -303,10 +243,7 @@
     },
     {
       "id": 22,
-      "name": {
-        "first": "Fraser",
-        "last": "Furnival"
-      },
+      "name": { "first": "Fraser", "last": "Furnival" },
       "city": "Damaishan",
       "country": "China",
       "employer": "Viva",
@@ -319,10 +256,7 @@
     },
     {
       "id": 23,
-      "name": {
-        "first": "Darryl",
-        "last": "Sarle"
-      },
+      "name": { "first": "Darryl", "last": "Sarle" },
       "city": "Szydłowo",
       "country": "Poland",
       "employer": "Linktype",
@@ -335,10 +269,7 @@
     },
     {
       "id": 24,
-      "name": {
-        "first": "Cecilius",
-        "last": "Barrabeale"
-      },
+      "name": { "first": "Cecilius", "last": "Barrabeale" },
       "city": "Tangtou",
       "country": "China",
       "employer": "Feedfire",
@@ -351,10 +282,7 @@
     },
     {
       "id": 25,
-      "name": {
-        "first": "Mikaela",
-        "last": "Jeannequin"
-      },
+      "name": { "first": "Mikaela", "last": "Jeannequin" },
       "city": "Tha Maka",
       "country": "Thailand",
       "employer": null,

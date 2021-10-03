@@ -98,3 +98,33 @@ div.buttons > button {
 .favorites ol {
   margin-left: 2.5rem;
 }
+form {
+  margin-top: 2rem;
+}
+form label {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.form-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.form-control input {
+  max-width: 100px;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  background-color: #34a5da;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 15px;
+}

@@ -4,6 +4,7 @@ import api from "./api/persons";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Button from "./components/Button";
+import Form from "./components/Form";
 import usersData from "./data/data";
 
 function App() {
@@ -40,6 +41,28 @@ function App() {
     }
   };
 
+  const handleDelete = async (id) => {
+    if (count > 1) {
+      setCount(() => count - 1);
+    } else {
+      setCount(() => count + 1);
+    }
+    try {
+      const { data } = await api.delete(`/persons/${id}`);
+      const personsList = persons.filter((person) => person.id !== id);
+      setPersons(personsList);
+      console.log(data);
+    } catch (e) {
+      if (e.response) {
+        console.log(e.response.data);
+        console.log(e.response.status);
+        console.log(e.response.headers);
+      } else {
+        console.log(e.message);
+      }
+    }
+  };
+
   return (
     <div className="App">
       <Header />
@@ -53,11 +76,16 @@ function App() {
         <Button onClick={handlePrev} className="prev" text="< Previous" />
         <div className="inner_buttons">
           <Button className="edit" text="Edit" />
-          <Button className="delete" text="Delete" />
+          <Button
+            onClick={() => handleDelete(persons[count].id)}
+            className="delete"
+            text="Delete"
+          />
           <Button className="new" text="New" />
         </div>
         <Button onClick={handleNext} className="next" text="Next >" />
       </div>
+      <Form />
     </div>
   );
 }
