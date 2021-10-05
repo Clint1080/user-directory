@@ -18,6 +18,10 @@ const Form = ({ addNewPerson }) => {
       alert("Please add first name");
       return;
     }
+    if (!last) {
+      alert("Please add last name");
+      return;
+    }
 
     addNewPerson({
       name: { first, last },
